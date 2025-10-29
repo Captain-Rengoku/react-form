@@ -206,15 +206,16 @@ const ReactHookForm = () => {
           </div>
 
           {/* Checkbox */}
-          <div className="flex gap-2">
-            <label className="flex items-center gap-2 cursor-pointer p-4">
+          <div className="flex">
+            <label className="flex items-center gap-2 cursor-pointer py-2">
               <input
                 type="checkbox"
                 {...register("agree")}
                 className="hidden peer"
               />
-              <div className="w-5 h-5 border-3 border-gray-400 rounded-md peer-hover:bg-indigo-600 peer-checked:bg-indigo-500 peer-checked:border-indigo-500 transition">
-                <Check size={16}/>
+              <div className="w-5 h-5 border-3 border-gray-400 rounded-md peer-hover:bg-indigo-600 peer-checked:bg-indigo-500 
+              peer-checked:border-indigo-500 text-slate-900 peer-checked:text-white transition">
+                <Check size={16} className=""/>
               </div>
               I agree to the terms and conditions
             </label>

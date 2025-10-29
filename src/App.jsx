@@ -13,6 +13,7 @@ import AdvancedForm from "./pages/AdvancedForm";
 import ReactHookForm from "./pages/ReactHookForm";
 import NotFound from "./pages/NotFound";
 import AuthContext, { AuthProvider } from "./context/AuthContext";
+import FormikForm from "./pages/Formik";
 
 const AppContent = () => {
   const { user } = useContext(AuthContext);
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/reusableform" element={<ReusableForm />} />
           <Route path="/advancedform" element={<AdvancedForm />} />
           <Route path="/reacthookform" element={<ReactHookForm />} />
+          <Route path="/formikform" element={<FormikForm />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

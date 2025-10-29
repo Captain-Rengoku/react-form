@@ -4,14 +4,15 @@ import { FormInput } from "lucide-react";
 
 const navLinks = [
   { to: "/", label: "Home" },
-  { to: "/formtype", label: "FormType" },
+  { to: "/formtype", label: "Form Type" },
   { to: "/formevent", label: "Form Event" },
-  { to: "/allinputs", label: "AllInputs" },
-  { to: "/formvalidation", label: "FormValidation" },
-  { to: "/complexform", label: "ComplexForm" },
-  { to: "/reusableform", label: "ReusableForm" },
-  { to: "/advancedform", label: "AdvancedForm" },
-  { to: "/reacthookform", label: "ReactHookForm" },
+  { to: "/allinputs", label: "All Inputs" },
+  { to: "/formvalidation", label: "Form Validation" },
+  { to: "/complexform", label: "Complex Form" },
+  { to: "/reusableform", label: "Reusable Form" },
+  { to: "/advancedform", label: "Advanced Form" },
+  { to: "/reacthookform", label: "React Hook Form" },
+  { to: "/formikform", label: "Formik Form" },
   // { to: "/random-url", label: "Random URL" },
 ];
 
