@@ -47,10 +47,10 @@ const UnifiedForm = () => {
   };
 
   return (
-    <div className="min-h-[95svh] bg-slate-950 flex items-center justify-center p-6">
+    <div className="w-xl bg-slate-800 rounded-lg flex items-center justify-center p-2 sm:p-4">
       <form
         onSubmit={handleSubmit}
-        className="bg-slate-900 p-6 rounded-xl shadow-lg text-white w-full max-w-md flex flex-col gap-5"
+        className="bg-slate-900 p-4 sm:p-6 rounded-xl shadow-lg text-white w-full flex flex-col gap-5"
       >
         <h2 className="text-2xl font-semibold text-indigo-400 text-center mb-2">
           Reusable Dynamic Form

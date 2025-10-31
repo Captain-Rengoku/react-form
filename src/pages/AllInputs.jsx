@@ -37,10 +37,10 @@ const AllInputs = () => {
   };
 
   return (
-    <div className="min-h-[95svh] bg-slate-950 flex items-center justify-center py-4 px-4">
+    <div className="w-xl bg-slate-800 rounded-lg flex items-center justify-center p-2 sm:p-4">
       <form
         onSubmit={handleSubmit}
-        className="bg-slate-900 text-white w-full max-w-lg p-6 rounded-xl shadow-lg space-y-3 border border-slate-800"
+        className="bg-slate-900 text-white w-full p-4 sm:p-6 rounded-lg shadow-lg space-y-3 border border-slate-800"
       >
         <h2 className="text-indigo-400 text-2xl font-semibold text-center mb-4">
           All Input Types (Controlled Form)

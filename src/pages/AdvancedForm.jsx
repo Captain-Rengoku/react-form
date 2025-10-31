@@ -75,11 +75,11 @@ export default function SuperAdvancedLoginForm() {
     formData.email.includes("@") && formData.password.length >= 6;
 
   return (
-    <div className="min-h-[95svh] bg-slate-950 flex items-center justify-center p-6">
+    <div className="bg-slate-800 w-xl flex items-center rounded-lg justify-center  p-2 sm:p-4">
       <Toaster position="top-right" />
       <form
         onSubmit={handleSubmit}
-        className="bg-slate-900 p-8 rounded-2xl shadow-xl w-full max-w-md flex flex-col gap-5 text-white"
+        className="bg-slate-900 p-4 sm:p-6 rounded-2xl shadow-xl w-full flex flex-col gap-5 text-white"
       >
         <h3 className="text-2xl font-semibold text-center mb-2 text-indigo-400">
           Super Advanced Login Form

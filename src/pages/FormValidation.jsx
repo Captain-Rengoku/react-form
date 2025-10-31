@@ -77,10 +77,10 @@ const FormValidation = () => {
   };
 
   return (
-    <div className="min-h-[95svh] bg-slate-950 flex items-center justify-center">
+    <div className="bg-slate-800 rounded-lg flex items-center justify-center w-xl p-2 sm:p-4">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-3 bg-slate-900 p-6 rounded-lg shadow-lg w-80"
+        className="flex flex-col gap-3 bg-slate-900 p-4 sm:p-6 rounded-lg shadow-lg w-full"
       >
         <h2 className="text-center text-indigo-400 text-xl font-semibold mb-2">
           Form Validation

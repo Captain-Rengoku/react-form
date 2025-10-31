@@ -65,8 +65,8 @@ const FormikForm = () => {
   };
 
   return (
-    <div className="min-h-[95svh] bg-slate-950 flex flex-col items-center justify-center p-6 text-white">
-      <div className="w-full sm:max-w-3xl bg-slate-900 rounded-2xl p-8 shadow-xl backdrop-blur-md">
+    <div className="w-xl bg-slate-800 flex flex-col items-center justify-center p-2 sm:p-4 rounded-lg text-white">
+      <div className="w-full sm:max-w-3xl bg-slate-900 rounded-2xl p-4 sm:p-6 shadow-xl backdrop-blur-md">
         <h1 className="text-2xl sm:text-3xl font-bold text-indigo-400 text-center mb-6">
           Formik Form Demo
         </h1>

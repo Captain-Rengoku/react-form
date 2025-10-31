@@ -50,11 +50,11 @@ const FormEvent = () => {
   };
 
   return (
-    <div className="min-h-[95svh] bg-slate-950 flex justify-center items-center">
+    <div className="w-xl bg-slate-800 rounded-lg flex justify-center items-center p-2 sm:p-4">
       <form
         onSubmit={handleSubmit}
         onReset={handleReset}
-        className="bg-slate-900 p-6 rounded-lg text-white w-full max-w-md m-4"
+        className="w-full bg-slate-900 p-4 sm:p-6 rounded-lg text-white"
       >
         <h2 className="text-indigo-400 text-2xl font-semibold text-center mb-4">
           Form Events
@@ -74,7 +74,7 @@ const FormEvent = () => {
             onKeyUp={handleKeyUp}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="w-full rounded-md bg-slate-800 border border-slate-700 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
         </label>
 
@@ -88,7 +88,7 @@ const FormEvent = () => {
             onChange={handleChange}
             onFocus={handleFocus}
             onBlur={handleBlur}
-            className="w-full rounded-md bg-slate-800 border border-slate-700 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
         </label>
 
@@ -102,7 +102,7 @@ const FormEvent = () => {
             onChange={handleChange}
             onFocus={handleFocus}
             onBlur={handleBlur}
-            className="w-full rounded-md bg-slate-800 border border-slate-700 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
         </label>
 
@@ -116,7 +116,7 @@ const FormEvent = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
             rows="3"
-            className="w-full rounded-md bg-slate-800 border border-slate-700 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
         </label>
 
@@ -124,13 +124,13 @@ const FormEvent = () => {
         <div className="flex justify-between gap-6">
           <button
             type="submit"
-          className="w-full bg-indigo-500 hover:bg-indigo-500/80 transition-colors py-2 rounded-md font-semibold"
+          className="w-full bg-indigo-500 hover:bg-indigo-500/80 transition-colors py-2 rounded-lg font-semibold"
           >
             Submit
           </button>
           <button
             type="reset"
-          className="w-full bg-red-500 hover:bg-red-500/80 transition-colors py-2 rounded-md font-semibold"
+          className="w-full bg-red-500 hover:bg-red-500/80 transition-colors py-2 rounded-lg font-semibold"
           >
             Reset
           </button>

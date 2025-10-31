@@ -13,6 +13,7 @@ const navLinks = [
   { to: "/advancedform", label: "Advanced Form" },
   { to: "/reacthookform", label: "React Hook Form" },
   { to: "/formikform", label: "Formik Form" },
+  { to: "/debounceandthrottle", label: "Debounce/Throttle" },
   // { to: "/random-url", label: "Random URL" },
 ];
 
@@ -21,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="h-[5svh] bg-slate-900 text-white shadow-md px-4 py-3 flex justify-between items-center">
+      <header className="absolute w-full bg-slate-900 text-white shadow-md px-4 py-3 flex justify-between items-center">
         <div className="text-2xl font-bold">
           <NavLink to="/" className="hover:text-slate-300">
             <FormInput size={24}/>
@@ -60,7 +61,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-6 text-lg">
+        <nav className="hidden md:grid md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-9 gap-x-2 text-lg">
           {navLinks.map(({ to, label }) => (
             <NavLink
               key={to}
@@ -78,7 +79,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-slate-900 text-white px-4 pb-4 space-y-2">
+        <div className="absolute w-full z-99 right-0 md:hidden mt-14 border-t-2 rounded-b-lg border-gray-50 bg-slate-900 text-white px-4 pb-4 space-y-2">
           {navLinks.map(({ to, label }) => (
             <NavLink
               key={to}

@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 
 const FormType = () => {
   return (
-    <div className="min-h-[95svh] bg-slate-950 flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-white p-4">
+    <div className="bg-slate-800 w-6xl rounded-lg flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-white p-2 sm:p-4">
       <Section title="Controlled Components">
         <ControlledForm />
       </Section>
@@ -16,7 +16,7 @@ const FormType = () => {
 // Section wrapper for consistency
 function Section({ title, children }) {
   return (
-    <div className="bg-slate-900 p-6 rounded-xl shadow-md w-full max-w-md text-center min-h-[40svh]">
+    <div className="bg-slate-900 p-4 sm:p-6 rounded-lg shadow-md w-full text-center min-h-[40svh]">
       <h2 className="text-indigo-400 text-2xl font-semibold text-center mb-4">
         {title}
       </h2>
@@ -37,7 +37,7 @@ function ControlledForm() {
   return (
     <>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-        <label className="text-left text-slate-300">
+        <label className="text-left text-indigo-300">
           Name:
           <input
             type="text"
@@ -78,7 +78,7 @@ function UncontrolledForm() {
   return (
     <>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-        <label className="text-left text-slate-300">
+        <label className="text-left text-indigo-300">
           Name:
           <input
             ref={nameRef}
