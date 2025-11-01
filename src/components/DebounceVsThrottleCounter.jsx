@@ -7,7 +7,7 @@ export function CounterButton() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="m-4 p-4 border-slate-700 border-2 rounded-lg flex flex-col items-center justify-center bg-slate-800 text-white">
+    <div className="m-4 p-4 border-slate-700 border-2 rounded-lg flex flex-col items-center justify-center bg-slate-800/60 text-white">
       <h1 className="text-2xl font-bold mb-6 text-indigo-300">React Counter</h1>
 
       <div className="flex items-center gap-4">
@@ -51,7 +51,7 @@ export function ThrottleCounter() {
   };
 
   return (
-    <div className="m-4 p-4 border-slate-700 border-2 rounded-lg flex flex-col items-center justify-center bg-slate-800 text-white">
+    <div className="m-4 p-4 border-slate-700 border-2 rounded-lg flex flex-col items-center justify-center bg-slate-800/60 text-white">
       <h1 className="text-2xl font-bold mb-6 text-indigo-300">Throttle Counter</h1>
 
       <div className="flex flex-col items-center gap-4">
@@ -65,8 +65,8 @@ export function ThrottleCounter() {
         </button>
 
         <p className="text-lg text-slate-400 text-center">
-          When clicked it immediately increases the value by 1, after that <br />
-          for 2 seconds any other clicks are ignored (throttled)
+          When clicked it immediately increases the value by 1, <br />
+          after that for 2 seconds any other clicks are ignored (throttled)
         </p>
       </div>
     </div>
@@ -91,7 +91,7 @@ export default function DebounceCounter() {
   };
 
   return (
-    <div className="m-4 p-4 border-slate-700 border-2 rounded-lg flex flex-col items-center justify-center bg-slate-800 text-white">
+    <div className="m-4 p-4 border-slate-700 border-2 rounded-lg flex flex-col items-center justify-center bg-slate-800/60 text-white">
       <h1 className="text-2xl font-bold mb-6 text-indigo-300">Debounce Counter</h1>
 
       <div className="flex flex-col items-center gap-4">
@@ -105,9 +105,9 @@ export default function DebounceCounter() {
         </button>
 
         <p className="text-lg text-slate-400 text-center">
-          When clicked any other clicks within 2 seconds are ignored, and <br />
-          after every click the timer is resets for 2 seconds, and <br />
-          2 seconds after the last click it increases the value by 1 (debounced)
+          When clicked any other clicks within 2 seconds are ignored, <br />
+          and after every click the timer is resets for 2 seconds, <br />
+          and 2 seconds after the last click it increases the value by 1 (debounced)
         </p>
       </div>
     </div>
