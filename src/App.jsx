@@ -15,6 +15,8 @@ import NotFound from "./pages/NotFound";
 import AuthContext, { AuthProvider } from "./context/AuthContext";
 import FormikForm from "./pages/Formik";
 import DebounceAndThrottle from "./pages/DebounceAndThrottle";
+import DebounceAndThrottleWithLodash from "./pages/DebounceAndThrottleWithLodash";
+import AutoSaveExample from "./pages/AutoSaveExample";
 
 const AppContent = () => {
   const { user } = useContext(AuthContext);
@@ -37,6 +39,8 @@ const App = () => {
           <Route path="/reacthookform" element={<ReactHookForm />} />
           <Route path="/formikform" element={<FormikForm />} />
           <Route path="/debounceandthrottle" element={<DebounceAndThrottle />} />
+          <Route path="/debounceandthrottlewithlodash" element={<DebounceAndThrottleWithLodash />} />
+          <Route path="/autosave" element={<AutoSaveExample />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

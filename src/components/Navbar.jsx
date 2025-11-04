@@ -14,6 +14,8 @@ const navLinks = [
   { to: "/reacthookform", label: "React Hook Form" },
   { to: "/formikform", label: "Formik Form" },
   { to: "/debounceandthrottle", label: "Debounce/Throttle" },
+  { to: "/debounceandthrottlewithlodash", label: "Lodash Debounce" },
+  { to: "/autosave", label: "Auto Save" },
   // { to: "/random-url", label: "Random URL" },
 ];
 
