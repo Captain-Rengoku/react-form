@@ -11,12 +11,14 @@ import ComplexForm from "./pages/ComplexForm";
 import ReusableForm from "./pages/ReusableForm";
 import AdvancedForm from "./pages/AdvancedForm";
 import ReactHookForm from "./pages/ReactHookForm";
-import NotFound from "./pages/NotFound";
 import AuthContext, { AuthProvider } from "./context/AuthContext";
 import FormikForm from "./pages/Formik";
 import DebounceAndThrottle from "./pages/DebounceAndThrottle";
 import DebounceAndThrottleWithLodash from "./pages/DebounceAndThrottleWithLodash";
 import AutoSaveExample from "./pages/AutoSaveExample";
+import MultiStepWizardExample from "./pages/MultiStepWizardExample";
+import NotFound from "./pages/NotFound";
+import DropdownExample from "./pages/DropdownExample";
 
 const AppContent = () => {
   const { user } = useContext(AuthContext);
@@ -41,6 +43,8 @@ const App = () => {
           <Route path="/debounceandthrottle" element={<DebounceAndThrottle />} />
           <Route path="/debounceandthrottlewithlodash" element={<DebounceAndThrottleWithLodash />} />
           <Route path="/autosave" element={<AutoSaveExample />} />
+          <Route path="/wizard" element={<MultiStepWizardExample />} />
+          <Route path="/dropdownform" element={<DropdownExample />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

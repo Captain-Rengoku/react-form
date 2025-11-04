@@ -16,6 +16,8 @@ const navLinks = [
   { to: "/debounceandthrottle", label: "Debounce/Throttle" },
   { to: "/debounceandthrottlewithlodash", label: "Lodash Debounce" },
   { to: "/autosave", label: "Auto Save" },
+  { to: "/wizard", label: "Wizard Form" },
+  { to: "/dropdownform", label: "Dependent Dropdown" },
   // { to: "/random-url", label: "Random URL" },
 ];
 
